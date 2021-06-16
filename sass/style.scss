@@ -1,0 +1,104 @@
+@use "reset" as *; @use "variables" as *; @use "globals" as *;
+
+// ** CENTER EVERYTHING
+
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+}
+
+
+// ** CARD CONTAINER
+
+.card-container {
+    height: fit-content;
+    margin: 3em 1.5em;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 450px;
+    transition: 1s;
+    @media (min-width: $desktop) {
+        display: flex;
+        max-width: 940px;
+    }
+}
+
+
+// ** CARD
+
+.card {
+    padding: 3.5em;
+}
+
+.card__title {
+    font-family: $bigShoulders;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: $lightGray;
+    padding: 1em 0;
+}
+
+.card__content {
+    color: $transparentWhite;
+    padding-bottom: 2em;
+    @media (min-width: $desktop) {
+        padding-bottom: 5em;
+    }
+}
+
+.card__button {
+    background-color: $lightGray;
+    color: black;
+    mix-blend-mode: screen;
+    padding: 0.7em 1.7em;
+    border-radius: 2em;
+    border: 3px transparent solid;
+    cursor: pointer;
+    transition: 0.6s;
+    
+    &:hover {
+        background-color: black;
+        mix-blend-mode: screen;
+        color: $lightGray;
+        border: 3px $lightGray solid;
+    }
+}
+
+
+// ** SEDANS, SUVS, LUXURY
+
+.card--sedans {
+    background-color: $orange;
+}
+
+.card--suvs {
+    background-color: $cyan;
+}
+
+.card--luxury {
+    background-color: $darkCyan;
+}
+
+
+// ** ATTRIBUTION
+
+.attribution {
+    padding: 1.7em;
+    text-align: center;
+    color: hsl(0, 0%, 0%, 0.5);
+
+    a{
+        color: $cyan;
+        text-decoration: none;
+        font-weight: 700;
+        transition: 500ms;
+        &:hover {
+            color: $orange;
+        }
+    }
+}

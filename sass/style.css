@@ -1,0 +1,113 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin-block: 0;
+  margin-inline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 180%;
+}
+
+body, button {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+}
+
+.card-container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 3em 1.5em;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 450px;
+  transition: 1s;
+}
+@media (min-width: 800px) {
+  .card-container {
+    display: flex;
+    max-width: 940px;
+  }
+}
+
+.card {
+  padding: 3.5em;
+}
+
+.card__title {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  color: #f2f2f2;
+  padding: 1em 0;
+}
+
+.card__content {
+  color: rgba(255, 255, 255, 0.75);
+  padding-bottom: 2em;
+}
+@media (min-width: 800px) {
+  .card__content {
+    padding-bottom: 5em;
+  }
+}
+
+.card__button {
+  background-color: #f2f2f2;
+  color: black;
+  mix-blend-mode: screen;
+  padding: 0.7em 1.7em;
+  border-radius: 2em;
+  border: 3px transparent solid;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.card__button:hover {
+  background-color: black;
+  mix-blend-mode: screen;
+  color: #f2f2f2;
+  border: 3px #f2f2f2 solid;
+}
+
+.card--sedans {
+  background-color: #e38826;
+}
+
+.card--suvs {
+  background-color: #006970;
+}
+
+.card--luxury {
+  background-color: #004241;
+}
+
+.attribution {
+  padding: 1.7em;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.attribution a {
+  color: #006970;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 500ms;
+}
+.attribution a:hover {
+  color: #e38826;
+}/*# sourceMappingURL=style.css.map */
