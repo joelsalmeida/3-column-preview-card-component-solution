@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots\3-column-preview-card-component_375.png)
-![](./screenshots\3-column-preview-card-component_1440.png)
+![Mobile - 375px](screenshots\3-column-preview-card-component_375.png)
+![Desktop - 1440px](screenshots\3-column-preview-card-component_1440.png)
 
 ### Links
 
